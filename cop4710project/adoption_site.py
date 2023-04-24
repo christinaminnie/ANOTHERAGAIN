@@ -191,82 +191,133 @@ with app.app_context():
     db.session.add(nintendo)
     db.session.add(computer)
     db.session.add(mobile)
-
-    # hard code descriptions from video games
+   # hard code descriptions from video games
     one = VideoGame.query.get(1)
     one.description = "A round-based, 5v5 tactical FPS with an Attackers vs Defenders setup and no respawns"
+    one.company = Company.query.get(1)
 
-    one.company = Company.query.get(2)
 
     two = VideoGame.query.get(2)
+    two.company = Company.query.get(2)
 
     three = VideoGame.query.get(3)
+    three.company = Company.query.get(3)
 
     four = VideoGame.query.get(4)
+    four.company = Company.query.get(4)
 
     five = VideoGame.query.get(5)
+    five.company = Company.query.get(5)
 
     six = VideoGame.query.get(6)
+    six.company = Company.query.get(6)
 
     seven = VideoGame.query.get(7)
+    seven.company = Company.query.get(7)
 
     eight = VideoGame.query.get(8)
+    eight.company = Company.query.get(8)
 
-    nine = VideoGame.query.get(9)
+    nine = VideoGame.query.get(3)
+    nine.company = Company.query.get(3)
 
     ten = VideoGame.query.get(10)
+    ten.company = Company.query.get(10)
 
     eleven = VideoGame.query.get(11)
+    eleven.company = Company.query.get(11)
 
     twelve = VideoGame.query.get(12)
+    twelve.company = Company.query.get(12)
 
-    thirteen = VideoGame.query.get(13)
+    thirteen = VideoGame.query.get(10)
+    thirteen.company = Company.query.get(10)
 
     fourteen = VideoGame.query.get(14)
+    fourteen.company = Company.query.get(14)
 
     fifteen = VideoGame.query.get(15)
+    fifteen.company = Company.query.get(15)
 
     sixteen = VideoGame.query.get(16)
+    sixteen.company = Company.query.get(16)
 
     seventeen = VideoGame.query.get(17)
+    seventeen.company = Company.query.get(17)
 
     eighteen = VideoGame.query.get(18)
+    eighteen.company = Company.query.get(18)
 
     nineteen = VideoGame.query.get(19)
+    nineteen.company = Company.query.get(19)
 
     twenty = VideoGame.query.get(20)
+    twenty.company = Company.query.get(20)
 
     twenty_one = VideoGame.query.get(21)
+    twenty_one.company = Company.query.get(21)
 
     twenty_two = VideoGame.query.get(22)
+    twenty_two.company = Company.query.get(22)
 
     twenty_three = VideoGame.query.get(23)
+    twenty_three.company = Company.query.get(23)
 
     twenty_four = VideoGame.query.get(24)
+    twenty_four.company = Company.query.get(24)
 
     twenty_five = VideoGame.query.get(25)
+    twenty_five.company = Company.query.get(25)
 
     twenty_six = VideoGame.query.get(26)
+    twenty_six.company = Company.query.get(26)
 
     twenty_seven = VideoGame.query.get(27)
+    twenty_seven.company = Company.query.get(27)
 
-    twenty_eight = VideoGame.query.get(28)
+    twenty_eight = VideoGame.query.get(1)
+    twenty_eight.company = Company.query.get(1)
 
-    twenty_nine = VideoGame.query.get(29)
+    twenty_nine = VideoGame.query.get(5)
+    twenty_nine.company = Company.query.get(5)
 
     thirty = VideoGame.query.get(30)
+    thirty.company = Company.query.get(30)
+
 
     thirty_one = VideoGame.query.get(31)
+    thirty_one.company = Company.query.get(31)
+
     thirty_two = VideoGame.query.get(32)
-    thirty_three = VideoGame.query.get(33)
+    thirty_two.company = Company.query.get(32)
+
+    thirty_three = VideoGame.query.get(4)
+    thirty_three.company = Company.query.get(4)
+
+
     thirty_four = VideoGame.query.get(34)
+    thirty_four.company = Company.query.get(34)
+
     thirty_five = VideoGame.query.get(35)
-    thirty_six = VideoGame.query.get(36)
+    thirty_five.company = Company.query.get(35)
+
+    thirty_six = VideoGame.query.get(1)
+    thirty_six.company = Company.query.get(1)
+
     thirty_seven = VideoGame.query.get(37)
+    thirty_seven.company = Company.query.get(37)
+
     thirty_eight = VideoGame.query.get(38)
-    thirty_nine = VideoGame.query.get(39)
-    forty = VideoGame.query.get(40)
+    thirty_eight.company = Company.query.get(38)
+
+    thirty_nine = VideoGame.query.get(30)
+    thirty_nine.company = Company.query.get(30)
+
+    forty = VideoGame.query.get(16)
+    forty.company = Company.query.get(16)
+
     forty_one = VideoGame.query.get(41)
+    forty_one.company = Company.query.get(41)
     
     forty_two = VideoGame.query.get(42)
     forty_two.company = Company.query.get(33)
