@@ -193,7 +193,7 @@ with app.app_context():
     db.session.add(mobile)
    # hard code descriptions from video games
     one = VideoGame.query.get(1)
-    one.description = "A round-based, 5v5 tactical FPS with an Attackers vs Defenders setup and no respawns"
+    one.description = "A round-based, 5v5 tactical FPS"
     one.company = Company.query.get(1)
 
     two = VideoGame.query.get(2)
