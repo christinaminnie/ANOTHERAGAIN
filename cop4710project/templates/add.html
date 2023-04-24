@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Have a game that needs to be added?</h1>
+  <p>Add a new game with the form below:</p>
+  <form method="POST">
+      {# This hidden_tag is a CSRF security feature. #}
+      {{ form.hidden_tag() }}
+      {{ form.name.label }} {{ form.name() }}<br>
+      {{ form.description.label }} {{ form.description() }}<br>
+      {{ form.release_date.label }} {{ form.release_date() }}<br>
+
+      {{ form.price.label }} {{ form.price() }}<br>
+      {{ form.company.label }} {{ form.company() }}<br>
+
+      {{ form.submit() }}
+  </form>
+</div>
+{% endblock %}

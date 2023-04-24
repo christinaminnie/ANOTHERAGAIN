@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+
+    <h1>Edit Video Game - Video Game Database</h1>
+
+    {% from "_formhelpers.html" import render_field %}
+    <form method="post">
+        <dl>
+            {{ render_field(form.name) }}
+            {{ render_field(form.description) }}
+            {{ render_field(form.release_date) }}
+
+            {{ render_field(form.price) }}
+            {{ render_field(form.company) }}
+        </dl>
+        <p><input type="submit" value="Submit">
+    </p></form>
+
+</div>
+{% endblock %}

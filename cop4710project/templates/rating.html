@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Add Rating</h1>
+  <p>Add a new rating with the form below:</p>
+  <form method="POST">
+      {# This hidden_tag is a CSRF security feature. #}
+      {{ form.hidden_tag() }}
+      {{ form.video_game_id.label }} {{ form.video_game_id() }} <br>
+      {{ form.numeric_rating.label }} {{ form.numeric_rating() }}<br>
+      {{ form.verbal_rating.label }} {{ form.verbal_rating() }}<br>
+      {{ form.submit() }}
+  </form>
+</div>
+{% endblock %}
