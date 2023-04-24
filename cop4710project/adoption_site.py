@@ -267,65 +267,183 @@ with app.app_context():
     thirty_nine = VideoGame.query.get(39)
     forty = VideoGame.query.get(40)
     forty_one = VideoGame.query.get(41)
+    
     forty_two = VideoGame.query.get(42)
+    forty_two.company = Company.query.get(33)
+    
     forty_three = VideoGame.query.get(43)
+    forty_three.company = Company.query.get(34)
+    
     forty_four = VideoGame.query.get(44)
+    forty_four.company = Company.query.get(12)
+    
     forty_five = VideoGame.query.get(45)
+    forty_five.company = Company.query.get(35)
+    
     forty_six = VideoGame.query.get(46)
+    forty_six.company = Company.query.get(36)
+    
     forty_seven = VideoGame.query.get(47)
+    forty_seven.company = Company.query.get(37)
+    
     forty_eight = VideoGame.query.get(48)
+    forty_eight.company = Company.query.get(38)
+    
     forty_nine = VideoGame.query.get(49)
+    forty_nine.company = Company.query.get(39)
+    
     fifty = VideoGame.query.get(50)
+    fifty.company = Company.query.get(40)
+    
     fifty_one = VideoGame.query.get(51)
+    fifty_one.company = Company.query.get(41)
+    
     fifty_two = VideoGame.query.get(51)
+    fifty_two.company = Company.query.get(42)
+    
     fifty_three = VideoGame.query.get(53)
+    fifty_three.company = Company.query.get(45)
+    
     fifty_four = VideoGame.query.get(54)
+    fifty_four.company = Company.query.get(12)
+    
     fifty_five = VideoGame.query.get(55)
+    fifty_five.company = Company.query.get(31)
+
     fifty_six = VideoGame.query.get(56)
+    fifty_six.company = Company.query.get(40)
+
     fifty_seven = VideoGame.query.get(57)
+    fifty_seven.company = Company.query.get(45)
+
     fifty_eight = VideoGame.query.get(58)
+    fifty_eight.company = Company.query.get(19)
+
     fifty_nine = VideoGame.query.get(59)
+    fifty_nine.company = Company.query.get(46)
+
     sixty = VideoGame.query.get(60)
+    sixty.company = Company.query.get(47)
+
     sixty_one = VideoGame.query.get(61)
+    sixty_one.company = Company.query.get(48)
+
     sixty_two = VideoGame.query.get(62)
+    sixty_two = Company.query.get(49)
+
     sixty_three = VideoGame.query.get(63)
+    sixty_three.company = Company.query.get(50)
+
     sixty_four = VideoGame.query.get(64)
+    sixty_four.company = Company.query.get(51)
+
     sixty_five = VideoGame.query.get(65)
+    sixty_five.company = Company.query.get(5)
+
     sixty_six = VideoGame.query.get(66)
+    sixty_six.company = Company.query.get(52)
+
     sixty_seven = VideoGame.query.get(67)
+    sixty_seven.company = Company.query.get(53)
+
     sixty_eight = VideoGame.query.get(68)
+    sixty_eight.company = Company.query.get(54)
+
     sixty_nine = VideoGame.query.get(69)
+    sixty_nine.company = Company.query.get(55)
+
     seventy = VideoGame.query.get(70)
+    seventy.company = Company.query.get(56)
+
     seventy_one = VideoGame.query.get(71)
+    seventy_one.company = Company.query.get(13)
+
     seventy_two = VideoGame.query.get(72)
+    seventy_two.company = Company.query.get(19)
+
     seventy_three = VideoGame.query.get(73)
+    seventy_three.company = Company.query.get(47)
+
     seventy_four = VideoGame.query.get(74)
+    seventy_four.company = Company.query.get(57)
+
     seventy_five = VideoGame.query.get(75)
+    seventy_five.company = Company.query.get(58)
+
     seventy_six = VideoGame.query.get(76)
+    seventy_six.company = Company.query.get(59)
+
     seventy_seven = VideoGame.query.get(77)
+    seventy_seven.company = Company.query.get(28)
+
     seventy_eight = VideoGame.query.get(78)
+    seventy_eight.company = Company.query.get(60)
+
     seventy_nine = VideoGame.query.get(79)
+    seventy_nine.company = Company.query.get(61)
+
     eighty = VideoGame.query.get(80)
+    eighty.company = Company.query.get(62)
+
     eighty_one = VideoGame.query.get(81)
+    eighty_one.company = Company.query.get(63)
+
     eighty_two = VideoGame.query.get(82)
+    eighty_two.company = Company.query.get(64)
+
     eighty_three = VideoGame.query.get(83)
+    eighty_three.company = Company.query.get(65)
+
     eighty_four = VideoGame.query.get(84)
+    eighty_four.company = Company.query.get(6)
+
     eighty_five = VideoGame.query.get(85)
+    eighty_five.company = Company.query.get(67)
+
     eighty_six = VideoGame.query.get(86)
+    eighty_six.company = Company.query.get(68)
+
     eighty_seven = VideoGame.query.get(87)
+    eighty_seven.company = Company.query.get(47)
+
     eighty_eight = VideoGame.query.get(88)
+    eighty_eight.company = Company.query.get(69)
+
     eighty_nine = VideoGame.query.get(89)
+    eighty_nine.company = Company.query.get(12)
+
     ninety = VideoGame.query.get(90)
+    ninety.company = Company.query.get(70)
+
     ninety_one = VideoGame.query.get(91)
+    ninety_one.company = Company.query.get(71)
+
     ninety_two = VideoGame.query.get(92)
+    ninety_two.company = Company.query.get(55)
+
     ninety_three = VideoGame.query.get(93)
+    ninety_three.company = Company.query.get(72)
+
     ninety_four = VideoGame.query.get(94)
+    ninety_four.company = Company.query.get(73)
+
     ninety_five = VideoGame.query.get(95)
+    ninety_five = Company.query.get(1)
+
     ninety_six = VideoGame.query.get(96)
+    ninety_six.company = Company.query.get(13)
+
     ninety_seven = VideoGame.query.get(97)
+    ninety_seven = Company.query.get(74)
+
     ninety_eight = VideoGame.query.get(98)
+    ninety_eight.company = Company.query.get(75)
+
     ninety_nine = VideoGame.query.get(99)
+    ninety_nine = Company.query.get(76)
+
     one_hundred = VideoGame.query.get(100)
+    one_hundred.company = Company.query.get(77)
 
     db.session.commit()
 
