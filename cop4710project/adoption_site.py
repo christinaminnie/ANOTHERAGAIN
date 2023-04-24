@@ -6,7 +6,7 @@ from flask_migrate import Migrate
 from flask import Flask, render_template, url_for, redirect, flash, request
 from sqlalchemy.orm import Query
 from tables import Results
-from sqlalchemy import func, Float
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'mysecretkey';
@@ -197,300 +197,399 @@ with app.app_context():
     one.company = Company.query.get(1)
 
     two = VideoGame.query.get(2)
+    two.description = "N/A"
     two.company = Company.query.get(1)
 
     three = VideoGame.query.get(3)
+    three.description = "Single-player, Galaxy-spanning action-adventure"
     three.company = Company.query.get(3)
 
     four = VideoGame.query.get(4)
+    four.description = "Fast-paced FPS"
     four.company = Company.query.get(4)
 
     five = VideoGame.query.get(5)
+    five.description = "MMO Dungeon Raid FPS"
     five.company = Company.query.get(5)
 
     six = VideoGame.query.get(6)
+    six.description = "MMO Action RPG Dungeon"
     six.company = Company.query.get(6)
 
     seven = VideoGame.query.get(7)
+    seven.description = "Realistic Vehicular Combat MMO"
     seven.company = Company.query.get(7)
 
     eight = VideoGame.query.get(8)
+    eight.description = "Open world pirate adventure"
     eight.company = Company.query.get(8)
 
     nine = VideoGame.query.get(9)
+    nine.description = "Fast-paced Battle Royale FPS"
     nine.company = Company.query.get(3)
 
     ten = VideoGame.query.get(10)
+    ten.description = "Open world action-adventure western"
     ten.company = Company.query.get(10)
 
     eleven = VideoGame.query.get(11)
+    eleven.description = "Massive open world Medieval RPG"
     eleven.company = Company.query.get(11)
 
     twelve = VideoGame.query.get(12)
+    twelve.description = "Action RPG zombie survival"
     twelve.company = Company.query.get(12)
 
     thirteen = VideoGame.query.get(13)
+    thirteen.description = "Dynamic Open world, action-adventure shooter"
     thirteen.company = Company.query.get(10)
 
     fourteen = VideoGame.query.get(14)
+    fourteen.description = "Action based RPG 3rd person shooter"
     fourteen.company = Company.query.get(14)
 
     fifteen = VideoGame.query.get(15)
+    fifteen.description = "Strategic and tactical round-based PvP FPS"
     fifteen.company = Company.query.get(15)
 
     sixteen = VideoGame.query.get(16)
+    sixteen.description = "Third person horror survival"
     sixteen.company = Company.query.get(16)
 
     seventeen = VideoGame.query.get(17)
+    seventeen.description = "Fishing adventure RPG"
     seventeen.company = Company.query.get(17)
 
     eighteen = VideoGame.query.get(18)
+    eighteen.description = "Online 2022 NBA basketball"
     eighteen.company = Company.query.get(18)
 
     nineteen = VideoGame.query.get(19)
+    nineteen.description = "Open world horror-survival"
     nineteen.company = Company.query.get(19)
 
     twenty = VideoGame.query.get(20)
+    twenty.description = "Immersive open world Harry Potter RPG"
     twenty.company = Company.query.get(20)
 
     twenty_one = VideoGame.query.get(21)
+    twenty_one.description = "Online dungeon action RPG"
     twenty_one.company = Company.query.get(21)
 
     twenty_two = VideoGame.query.get(22)
+    twenty_two.description = "MMO RPG"
     twenty_two.company = Company.query.get(22)
 
     twenty_three = VideoGame.query.get(23)
+    twenty_three.description = "Co-op horror-based puzzle"
     twenty_three.company = Company.query.get(23)
 
     twenty_four = VideoGame.query.get(24)
+    twenty_four.description = "Online horror-survival"
     twenty_four.company = Company.query.get(24)
 
     twenty_five = VideoGame.query.get(25)
+    twenty_five.description = "Open world, multiplayer survival FPS"
     twenty_five.company = Company.query.get(25)
 
     twenty_six = VideoGame.query.get(26)
+    twenty_six.description = "Co-op adventure FPS Space-based RPG"
     twenty_six.company = Company.query.get(26)
 
     twenty_seven = VideoGame.query.get(27)
+    twenty_seven.description = "Action-adventure survival RPG"
     twenty_seven.company = Company.query.get(27)
 
     twenty_eight = VideoGame.query.get(28)
+    twenty_eight.description = "N/A"
     twenty_eight.company = Company.query.get(1)
 
     twenty_nine = VideoGame.query.get(29)
+    twenty_nine.description = "Collection of Halo Games"
     twenty_nine.company = Company.query.get(5)
 
     thirty = VideoGame.query.get(30)
+    thirty.description = "Real-life sandbox simulation"
     thirty.company = Company.query.get(30)
 
     thirty_one = VideoGame.query.get(31)
+    thirty_one.description = "Fast-paced dungeon crawler RPG"
     thirty_one.company = Company.query.get(31)
 
     thirty_two = VideoGame.query.get(32)
+    thirty_two.description = "Open world RPG action-adventure"
     thirty_two.company = Company.query.get(32)
 
     thirty_three = VideoGame.query.get(33)
+    thirty_three.description = "MW2 battle-pass"
     thirty_three.company = Company.query.get(4)
 
     thirty_four = VideoGame.query.get(34)
+    thirty_four.description = "MMO RPG "
     thirty_four.company = Company.query.get(34)
 
     thirty_five = VideoGame.query.get(35)
+    thirty_five.description = "Turn-based, empire-building strategy"
     thirty_five.company = Company.query.get(35)
 
     thirty_six = VideoGame.query.get(36)
+    thirty_six.description = "Multiplayer fast-paced FPS"
     thirty_six.company = Company.query.get(1)
 
     thirty_seven = VideoGame.query.get(37)
+    thirty_seven.description = "Multiplayer fantasy farming simulator"
     thirty_seven.company = Company.query.get(37)
 
     thirty_eight = VideoGame.query.get(38)
+    thirty_eight.description = "Tactical FPS SWAT RPG"
     thirty_eight.company = Company.query.get(38)
 
     thirty_nine = VideoGame.query.get(39)
+    thirty_nine.description = "Online 2022 FIFA Football"
     thirty_nine.company = Company.query.get(30)
 
     forty = VideoGame.query.get(40)
+    forty.description = "Single-player Action RPG dungeon"
     forty.company = Company.query.get(16)
 
     forty_one = VideoGame.query.get(41)
+    forty_one.description = "Fast-paced FPS"
     forty_one.company = Company.query.get(41)
     
     forty_two = VideoGame.query.get(42)
+    forty_two.description = "Fast-paced Multiplayer FPS"
     forty_two.company = Company.query.get(33)
     
     forty_three = VideoGame.query.get(43)
+    forty_three.description = "Real-time sandbox strategy"
     forty_three.company = Company.query.get(34)
     
     forty_four = VideoGame.query.get(44)
+    forty_four.description = "Action-adventure FPS RPG"
     forty_four.company = Company.query.get(12)
     
     forty_five = VideoGame.query.get(45)
+    forty_five.description = "Co-op horror survival"
     forty_five.company = Company.query.get(35)
     
     forty_six = VideoGame.query.get(46)
+    forty_six.description = "MMORPG"
     forty_six.company = Company.query.get(36)
     
     forty_seven = VideoGame.query.get(47)
+    forty_seven.description = "Zombie survival RPG"
     forty_seven.company = Company.query.get(37)
     
     forty_eight = VideoGame.query.get(48)
+    forty_eight.description = "Strategic card-based battle"
     forty_eight.company = Company.query.get(38)
     
     forty_nine = VideoGame.query.get(49)
+    forty_nine.description = "Competitive card-based"
     forty_nine.company = Company.query.get(39)
     
     fifty = VideoGame.query.get(50)
+    fifty.description = "Dungeon RPG adventure"
     fifty.company = Company.query.get(40)
     
     fifty_one = VideoGame.query.get(51)
+    fifty_one.description = "Open world farming simulator"
     fifty_one.company = Company.query.get(41)
     
-    fifty_two = VideoGame.query.get(51)
+    fifty_two = VideoGame.query.get(52)
+    fifty_two.description = "Farming RPG"
     fifty_two.company = Company.query.get(42)
     
     fifty_three = VideoGame.query.get(53)
+    fifty_three.description = "Futuristic action RPG"
     fifty_three.company = Company.query.get(45)
     
     fifty_four = VideoGame.query.get(54)
+    fifty_four.description = "Single-player action survival"
     fifty_four.company = Company.query.get(12)
     
     fifty_five = VideoGame.query.get(55)
+    fifty_five.description = "Starwars MMORPG"
     fifty_five.company = Company.query.get(31)
 
     fifty_six = VideoGame.query.get(56)
+    fifty_six.description = "Open-world adventure MMORPG"
     fifty_six.company = Company.query.get(40)
 
     fifty_seven = VideoGame.query.get(57)
+    fifty_seven.description = "Vast open-world adventure RPG"
     fifty_seven.company = Company.query.get(45)
 
     fifty_eight = VideoGame.query.get(58)
+    fifty_eight.description = "Nuclear War open-world adventure"
     fifty_eight.company = Company.query.get(19)
 
     fifty_nine = VideoGame.query.get(59)
+    fifty_nine.description = "MMO strategy battle-area"
     fifty_nine.company = Company.query.get(46)
 
     sixty = VideoGame.query.get(60)
+    sixty.description = "Sci-Fi sandbox strategy"
     sixty.company = Company.query.get(47)
 
     sixty_one = VideoGame.query.get(61)
+    sixty_one.description = "Multiplayer team-based FPS"
     sixty_one.company = Company.query.get(48)
 
     sixty_two = VideoGame.query.get(62)
+    sixty_two.description = "Fantasy base constuction simulation"
     sixty_two = Company.query.get(49)
 
     sixty_three = VideoGame.query.get(63)
+    sixty_three.description = "Co-op third-person shooter survival"
     sixty_three.company = Company.query.get(50)
 
     sixty_four = VideoGame.query.get(64)
+    sixty_four.description "City-building business simulation"
     sixty_four.company = Company.query.get(51)
 
     sixty_five = VideoGame.query.get(65)
+    sixty_five.description = "Futuristic action-adventure FPS"
     sixty_five.company = Company.query.get(5)
 
     sixty_six = VideoGame.query.get(66)
+    sixty_six.description = "Multiplayer real-time action strategy building"
     sixty_six.company = Company.query.get(52)
 
     sixty_seven = VideoGame.query.get(67)
+    sixty_seven.description = "Flight simulation RPG"
     sixty_seven.company = Company.query.get(53)
 
     sixty_eight = VideoGame.query.get(68)
+    sixty_eight.description = "Single-player strategy defense"
     sixty_eight.company = Company.query.get(54)
 
     sixty_nine = VideoGame.query.get(69)
+    sizty_nine.description = "Open world online racing"
     sixty_nine.company = Company.query.get(55)
 
     seventy = VideoGame.query.get(70)
+    seventy.description = "First-person RPG horror survival"
     seventy.company = Company.query.get(56)
 
     seventy_one = VideoGame.query.get(71)
+    seventy-one.description = "Tactical battle RPG"
     seventy_one.company = Company.query.get(13)
 
     seventy_two = VideoGame.query.get(72)
+    seventy_two.description = "Open world adventure RPG"
     seventy_two.company = Company.query.get(19)
 
     seventy_three = VideoGame.query.get(73)
+    seventy_three.description = "Nation defense strategy"
     seventy_three.company = Company.query.get(47)
 
     seventy_four = VideoGame.query.get(74)
+    seventy_four.description = "Open world oceanic survival"
     seventy_four.company = Company.query.get(57)
 
     seventy_five = VideoGame.query.get(75)
+    seventy_five.description = "Third-person multiplayer PvP arena battle"
     seventy_five.company = Company.query.get(58)
 
     seventy_six = VideoGame.query.get(76)
+    seventy_six.description = "Multiplayer FPS"
     seventy_six.company = Company.query.get(59)
 
     seventy_seven = VideoGame.query.get(77)
+    seventy_seven.description = "TotalWar: WARHAMER AddOn"
     seventy_seven.company = Company.query.get(28)
 
     seventy_eight = VideoGame.query.get(78)
+    seventy_eight.description = "Single-player action-adventure zombie survival"
     seventy_eight.company = Company.query.get(60)
 
     seventy_nine = VideoGame.query.get(79)
+    seventy_nine.description = "Authentic Boxing"
     seventy_nine.company = Company.query.get(61)
 
     eighty = VideoGame.query.get(80)
+    eighty.description = "MMORPG survival and exploration"
     eighty.company = Company.query.get(62)
 
     eighty_one = VideoGame.query.get(81)
+    eighty_one.description = "Open world barbarian survival"
     eighty_one.company = Company.query.get(63)
 
     eighty_two = VideoGame.query.get(82)
+    eighty_two.description = "Multiplayer sandbox zombie survival"
     eighty_two.company = Company.query.get(64)
 
     eighty_three = VideoGame.query.get(83)
+    eighty_three.description = "Tactical fantasy strategy RPG "
     eighty_three.company = Company.query.get(65)
 
     eighty_four = VideoGame.query.get(84)
+    eighty_four.description = "Turn-based strategic fantasy battle"
     eighty_four.company = Company.query.get(6)
 
     eighty_five = VideoGame.query.get(85)
+    eighty_five.description = "Multiplayer survival platform exploration"
     eighty_five.company = Company.query.get(67)
 
     eighty_six = VideoGame.query.get(86)
+    eighty_six.description = "Single-player action RPG"
     eighty_six.company = Company.query.get(68)
 
     eighty_seven = VideoGame.query.get(87)
+    eighty_seven.description = "Strategy war-simulator RPG"
     eighty_seven.company = Company.query.get(47)
 
     eighty_eight = VideoGame.query.get(88)
+    eighty_eight.description = "Multiplayer vehicle adventure"
     eighty_eight.company = Company.query.get(69)
 
     eighty_nine = VideoGame.query.get(89)
+    eighty_nine.description = "Single-player open-world adventure"
     eighty_nine.company = Company.query.get(12)
 
     ninety = VideoGame.query.get(90)
+    ninety.description = "Multiplayer monster horde survival"
     ninety.company = Company.query.get(70)
 
     ninety_one = VideoGame.query.get(91)
+    ninety_one.description = "Open-world vehicle simulation"
     ninety_one.company = Company.query.get(71)
 
     ninety_two = VideoGame.query.get(92)
+    ninety_two.description = "Multiplayer racing and adventure"
     ninety_two.company = Company.query.get(55)
 
     ninety_three = VideoGame.query.get(93)
+    ninety_three.description = "Multiplayer platform sandbox"
     ninety_three.company = Company.query.get(72)
 
     ninety_four = VideoGame.query.get(94)
+    ninety_four.description = "MMO vehicular warship battles"
     ninety_four.company = Company.query.get(73)
 
     ninety_five = VideoGame.query.get(95)
+    ninety_five.description = "N/A"
     ninety_five = Company.query.get(1)
 
     ninety_six = VideoGame.query.get(96)
+    ninety_six.description = "Multiplayer arcade-like fighting"
     ninety_six.company = Company.query.get(13)
 
     ninety_seven = VideoGame.query.get(97)
+    ninety_seven.description = "Starwars MMORPG third-person shooter"
     ninety_seven = Company.query.get(74)
 
     ninety_eight = VideoGame.query.get(98)
+    ninety_eight.description = "Open-world prehistoric survival"
     ninety_eight.company = Company.query.get(75)
 
     ninety_nine = VideoGame.query.get(99)
+    ninety_nine.description = "Single-player house renovation simulator"
     ninety_nine = Company.query.get(76)
 
     one_hundred = VideoGame.query.get(100)
+    one_hundred.description = "Adventure 18-wheeler truck simulator"
     one_hundred.company = Company.query.get(77)
 
     db.session.commit()
@@ -672,15 +771,6 @@ def edit(id):
         return render_template('edit_video_game.html', form=form)
     else:
         return 'Error loading #{id}'.format(id=id)
-    
-    
-@app.route('/aggregate')
-def display_aggregate():
-    average_price = db.session.query(
-        func.avg(func.cast(func.replace(func.substr(VideoGame.price, 2), ',', ''), Float))).filter(
-        ~VideoGame.price.in_(["Price not available", "Free to play"])).filter(VideoGame.price.like('$%')).scalar()
-    average_price_text = f"Average Price of Numeric Games: {average_price}"
-    return render_template('aggregate.html', average_price=average_price_text)
 
 
 if __name__ == '__main__':
