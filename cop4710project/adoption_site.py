@@ -196,9 +196,8 @@ with app.app_context():
     one.description = "A round-based, 5v5 tactical FPS with an Attackers vs Defenders setup and no respawns"
     one.company = Company.query.get(1)
 
-
     two = VideoGame.query.get(2)
-    two.company = Company.query.get(2)
+    two.company = Company.query.get(1)
 
     three = VideoGame.query.get(3)
     three.company = Company.query.get(3)
@@ -218,7 +217,7 @@ with app.app_context():
     eight = VideoGame.query.get(8)
     eight.company = Company.query.get(8)
 
-    nine = VideoGame.query.get(3)
+    nine = VideoGame.query.get(9)
     nine.company = Company.query.get(3)
 
     ten = VideoGame.query.get(10)
@@ -230,7 +229,7 @@ with app.app_context():
     twelve = VideoGame.query.get(12)
     twelve.company = Company.query.get(12)
 
-    thirteen = VideoGame.query.get(10)
+    thirteen = VideoGame.query.get(13)
     thirteen.company = Company.query.get(10)
 
     fourteen = VideoGame.query.get(14)
@@ -275,15 +274,14 @@ with app.app_context():
     twenty_seven = VideoGame.query.get(27)
     twenty_seven.company = Company.query.get(27)
 
-    twenty_eight = VideoGame.query.get(1)
+    twenty_eight = VideoGame.query.get(28)
     twenty_eight.company = Company.query.get(1)
 
-    twenty_nine = VideoGame.query.get(5)
+    twenty_nine = VideoGame.query.get(29)
     twenty_nine.company = Company.query.get(5)
 
     thirty = VideoGame.query.get(30)
     thirty.company = Company.query.get(30)
-
 
     thirty_one = VideoGame.query.get(31)
     thirty_one.company = Company.query.get(31)
@@ -291,9 +289,8 @@ with app.app_context():
     thirty_two = VideoGame.query.get(32)
     thirty_two.company = Company.query.get(32)
 
-    thirty_three = VideoGame.query.get(4)
+    thirty_three = VideoGame.query.get(33)
     thirty_three.company = Company.query.get(4)
-
 
     thirty_four = VideoGame.query.get(34)
     thirty_four.company = Company.query.get(34)
@@ -301,7 +298,7 @@ with app.app_context():
     thirty_five = VideoGame.query.get(35)
     thirty_five.company = Company.query.get(35)
 
-    thirty_six = VideoGame.query.get(1)
+    thirty_six = VideoGame.query.get(36)
     thirty_six.company = Company.query.get(1)
 
     thirty_seven = VideoGame.query.get(37)
@@ -310,10 +307,10 @@ with app.app_context():
     thirty_eight = VideoGame.query.get(38)
     thirty_eight.company = Company.query.get(38)
 
-    thirty_nine = VideoGame.query.get(30)
+    thirty_nine = VideoGame.query.get(39)
     thirty_nine.company = Company.query.get(30)
 
-    forty = VideoGame.query.get(16)
+    forty = VideoGame.query.get(40)
     forty.company = Company.query.get(16)
 
     forty_one = VideoGame.query.get(41)
