@@ -161,11 +161,15 @@ with app.app_context():
     with open(r'C:\Users\nguye\FlaskStuff\cop4710project\compcountry.txt', 'r') as file:
         lines = file.readlines()
 
+    x = 0
     for i in range(0, len(lines), 2):
+        x += 1
+        print (x)
         name = lines[i].strip()
         location = lines[i+1].strip()
         company = Company(name=name, location=location)
         db.session.add(company)
+        print(f'{company.name}\nRelease Date: {company.location}\n')
 
     db.session.commit()
 
