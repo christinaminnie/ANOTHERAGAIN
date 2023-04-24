@@ -1,0 +1,119 @@
+Valve Corporation
+Steam
+Respawn Entertainment
+Infinity Ward
+Bungie Inc.
+Smilegate
+Gaijin Entertainment
+Rare
+Respawn Entertainment
+Rockstar Games
+Shiro Games
+Techland
+Rockstar Games
+Digital Extremes
+Ubisoft
+Capcom
+Black Salt Games
+Visual Concepts
+Endnight Games
+Avalanche Software
+Grinding Gear Games
+Bethesda Softworks
+Clock Wizard Games
+Behaviour Interactive
+Facepunch Studios
+Ghost Ship Games
+Obsidian Entertainment
+Valve Corporation
+Bungie
+Maxis
+Supergiant Games
+FromSoftware Inc.
+Infinity Ward
+Square Enix
+Creative Assembly
+Valve Corporation
+Pixel Sprout Studios
+VOID Interactive
+Electronic Arts
+Capcom
+Noisestorm Limited
+Treyarch
+Relic Entertainment
+Ubisoft
+Kinetic Games
+Pearl Abyss
+The Indie Stone
+Deadpan Games
+Konami
+Larian Studios
+GIANTS Software
+ConcernedApe
+CD Projekt
+Techland
+Electronic Arts
+Amazon Games
+Gearbox Software
+Bethesda Game Studios
+IceFrog
+Paradox Development Studio
+Sweet Bandits Studio
+Ludeon Studios
+Cold Iron Studios
+Colossal Order
+ Bungie Inc
+Mojang Studios
+Microsoft
+Ninja Kiwi
+Playground Games
+Crytek
+Capcom
+Bethesda Softworks
+Paradox Development Studio
+Redbeet Interactive
+Hi Rez Studios
+343 Industries
+Creative Assembly
+Naughty Dog
+Steel City Interactive
+Iron Gate Studio
+Funcom
+Bohemia INteractive
+Overhype Studios
+Epic Games
+Videocult
+Digital Sun
+Paradox Development Studio
+Saber Interactive
+Ubisoft
+Hopoo Games
+BeamNG
+Playground Games
+Re-Logic
+Wargaming
+Steam
+Capco
+DICE
+Studio Wildcard
+Frozen District
+SCS Software
+
+STEAM IS OWNED BY VALUE
+MAXIS IS OWNED BY ELECTRONIC ARTS
+
+These numbers correlate with the video game id and its company. I am trying to insert the company name into games so then we can do a join query but it keeps giving me errors.
+
+
+
+@app.route('/games')
+def get_games():
+    games = db.session.query(Game).join(Company).add_columns(Company.name).all()
+    game_data = []
+    for game in games:
+        game_dict = {}
+        game_dict['name'] = game[0].name
+        game_dict['company_id'] = game[0].company_id
+        game_dict['company_name'] = game[1]
+        game_data.append(game_dict)
+    return jsonify(game_data)
