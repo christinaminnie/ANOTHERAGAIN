@@ -6,7 +6,7 @@ from flask_migrate import Migrate
 from flask import Flask, render_template, url_for, redirect, flash, request
 from sqlalchemy.orm import Query
 from tables import Results
-
+from sqlalchemy import func, Float
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'mysecretkey';
@@ -672,6 +672,15 @@ def edit(id):
         return render_template('edit_video_game.html', form=form)
     else:
         return 'Error loading #{id}'.format(id=id)
+    
+    
+@app.route('/aggregate')
+def display_aggregate():
+    average_price = db.session.query(
+        func.avg(func.cast(func.replace(func.substr(VideoGame.price, 2), ',', ''), Float))).filter(
+        ~VideoGame.price.in_(["Price not available", "Free to play"])).filter(VideoGame.price.like('$%')).scalar()
+    average_price_text = f"Average Price of Numeric Games: {average_price}"
+    return render_template('aggregate.html', average_price=average_price_text)
 
 
 if __name__ == '__main__':
